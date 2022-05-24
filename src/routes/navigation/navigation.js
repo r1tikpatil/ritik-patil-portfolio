@@ -1,30 +1,48 @@
-import { Outlet } from "react-router-dom";
-import { Fragment } from "react";
+import { NavHashLink as Link } from "react-router-hash-link";
 
-import {
-  NavigationContainer,
-  NavLinks,
-  NavLink,
-  LogoContainer,
-} from "./navigation.styles.jsx";
+import { NavContainer } from "./navigation.styles.jsx";
+
+import ScrollIntoView from "react-scroll-into-view";
+
+import { BsBoxArrowInUpRight } from "react-icons/bs";
 
 const Navigation = () => {
+  const activeStyle = { color: "rgba(248, 99, 248, 0.966)" };
   return (
-    <Fragment>
-      <NavigationContainer>
-        <LogoContainer>
-         
-        </LogoContainer>
+    <NavContainer>
+      <ul>
+        <li>
+          <ScrollIntoView selector="#home">
+            <Link to="/about" activeStyle={activeStyle}>
+              Home
+            </Link>
+          </ScrollIntoView>
+        </li>
+        <li>
+          <ScrollIntoView selector="#skills">
+            <Link to="/skills" activeStyle={activeStyle}>
+              Skills
+            </Link>
+          </ScrollIntoView>
+        </li>
+        <li>
+          <ScrollIntoView selector="#projects">
+            <Link to="/projects" activeStyle={activeStyle}>
+              Projects
+            </Link>
+          </ScrollIntoView>
+        </li>
 
-        <NavLinks>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/skill">Skill </NavLink>
-          <NavLink to="/project">Projects </NavLink>
-          <NavLink to="/contact">Contact </NavLink>
-        </NavLinks>
-      </NavigationContainer>
-      <Outlet />
-    </Fragment>
+        <li>
+          <ScrollIntoView selector="#contact">
+            <Link to="/contact" activeStyle={activeStyle}>
+              Contact
+            </Link>
+          </ScrollIntoView>
+        </li>
+        <BsBoxArrowInUpRight className="icon" />
+      </ul>
+    </NavContainer>
   );
 };
 

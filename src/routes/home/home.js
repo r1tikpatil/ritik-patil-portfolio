@@ -28,7 +28,7 @@ const buttonVariant = {
 
 const Home = () => {
   return (
-    <HomeContainer>
+    <HomeContainer id="home">
       <ImageContainer style={{ cursor: "pointer" }}>
         <Image>
           <img
