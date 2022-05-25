@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ProjectContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 25px;
   justify-content: center;
   margin: 3rem;
@@ -13,9 +13,10 @@ export const ProjectContainer = styled.div`
 `;
 
 export const H2 = styled.h2`
-  font-weight: 900;
+  font-weight: 600;
   font-size: 2.5rem;
-  color: whitesmoke;
+  color: white;
+  text-shadow: 1px 1px #3dc9a7;
   text-align: center;
   margin-bottom: 2em;
   margin-top: 2em;

@@ -75,7 +75,7 @@ export const CardLink = styled.div`
       margin: 0.7rem 1rem 1rem 2rem;
     }
     &:hover {
-      color: rgba(255, 0, 255, 0.513);
+      color: #3dc9a7;
       transition: all 0.5s ease;
     }
   }

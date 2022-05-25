@@ -5,7 +5,7 @@ import portfolio from "../../assets/portfolio.png";
 const contentCard = [
   {
     id: 1,
-    title: "E - Commerce WebSite",
+    title: "E-Commerce",
     body: "Responsive E-commerce website which includes tools such as Hooks, React Router, Redux Toolkit.",
     image: Ecommerce,
     tech: `Technology Used - REACT JS  FIREBASE STYLED-COMPONENTS`,
