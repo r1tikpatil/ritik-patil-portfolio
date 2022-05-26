@@ -11,14 +11,14 @@ export const DivWrapper = styled.div`
 
   @media (max-width: 799px) and (min-width: 600px) {
     margin-left: 5vh;
-    margin-bottom: 19rem;
+    margin-bottom: 29rem;
     margin-top: -100px;
   }
   @media (max-width: 599px) and (min-width:400px) {
     margin-left: 5vh;
     margin-right: 3vh;
-    margin-top: 8rem;
-    margin-bottom: 12rem;
+    margin-top: -8rem;
+    margin-bottom: 22rem;
   }
 
   @media (max-width: 399px) {
