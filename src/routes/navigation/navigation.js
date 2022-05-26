@@ -17,7 +17,7 @@ const Navigation = () => {
   const activeStyle = { color: "rgba(248, 99, 248, 0.966)" };
   return (
     <Fragment>
-      <MenuDiv onClick={() => setIsOpen(!isOpen)}>
+      <MenuDiv isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}>
         <i className="fa-solid fa-bars"></i>
       </MenuDiv>
       <NavContainer isOpen={isOpen}>

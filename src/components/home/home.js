@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 import Typed from "react-typed";
 import { useState } from "react";
 
-import cv from "../../assets/Resume.pdf";
+import cv from "../../assets/My_Resume.pdf";
 
 const buttonVariant = {
   hidden: {
@@ -40,11 +40,37 @@ const Home = () => {
   return (
     <>
       <Aboutopen isOpen={isOpen}>
-          <div className="about-me">
-          My self ritik
-          
+        <div className="about-me">
+          I'm a 20-year old CSE undergrad who is interested in Software
+          Development and Product Management.
+          <div>
+            <h3>Acheivments</h3>
+            <ul>
+              <li>
+                Solved 500+ Problems on{" "}
+                <a href="https://leetcode.com/Rit1k05/" target="_blank">
+                  Leetcode
+                </a>{" "}
+                and{" "}
+                <a
+                  href="https://auth.geeksforgeeks.org/user/ritikpatil566/practice/"
+                  target="_blank"
+                >
+                  GeeksForGeeks
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.codechef.com/users/ritik_patil05"
+                  target="_blank"
+                >
+                  Codechef
+                </a>{" "}
+                (max Rating 1626)
+              </li>
+            </ul>
           </div>
-      
+        </div>
       </Aboutopen>
       <HomeContainer id="home">
         <ImageContainer style={{ cursor: "pointer" }}>

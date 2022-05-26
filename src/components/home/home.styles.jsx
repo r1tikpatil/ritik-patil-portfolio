@@ -1,16 +1,105 @@
 import styled from "styled-components";
 
 export const Aboutopen = styled.div`
-  width: 30%;
-  height: 90vh;
-  position: fixed;
-  top: 74px;
-  left: ${({ isOpen }) => (isOpen ? "80%" : "3000px")};
-  border: 2px solid grey;
-  box-shadow: 0 0 6px 4px white;
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
   transition: all 3s;
+  overflow: hidden;
+
+  @media (min-width: 800px) {
+    width: 30%;
+    height: 90vh;
+    position: fixed;
+    top: 74px;
+    left: ${({ isOpen }) => (isOpen ? "80%" : "3000px")};
+    border: 2px solid grey;
+    box-shadow: 0 0 6px 4px white;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+
+  @media (max-width: 799px) and (min-width: 600px) {
+    width: 30%;
+    height: 90vh;
+    position: fixed;
+    top: 34px;
+    left: ${({ isOpen }) => (isOpen ? "70%" : "3000px")};
+    border: 2px solid grey;
+    box-shadow: 0 0 6px 4px white;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+
+  @media (max-width: 599px) and (min-width: 400px) {
+    width: 40%;
+    height: 90vh;
+    position: fixed;
+    top: 34px;
+    left: ${({ isOpen }) => (isOpen ? "60%" : "3000px")};
+    border: 2px solid grey;
+    box-shadow: 0 0 6px 4px white;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    z-index: 100;
+    height: 70vh;
+  }
+
+  .about-me {
+    position: relative;
+    top: 25%;
+    left: 7%;
+    width: 60%;
+    @media (max-width: 799px) and (min-width: 600px) {
+      left: 9%;
+      top: 20%;
+      width: 70%;
+    }
+    @media (max-width: 599px) and (min-width: 400px) {
+      left: 11%;
+      top: 16%;
+      width: 80%;
+    }
+    @media (max-width: 400px) {
+      top: 20%;
+    }
+
+    h3 {
+      color: #3dc9a7;
+      letter-spacing: 2px;
+      @media (max-width: 400px) {
+        letter-spacing: 0;
+      }
+    }
+
+    ul {
+      li {
+        list-style-type: square;
+        margin-top: 20px;
+        letter-spacing: 1px;
+
+        @media (max-width: 799px) and (min-width: 750px) {
+          margin-top: 30px;
+          letter-spacing: 1px;
+        }
+        @media (max-width: 750px) and (min-width: 700px) {
+          margin-top: 20px;
+          letter-spacing: 1px;
+        }
+        @media (max-width: 699px) and (min-width: 600px) {
+          margin-top: 2px;
+          letter-spacing: 0;
+        }
+
+        @media (max-width: 599px) and (min-width: 400px) {
+          margin-top: 0px;
+          letter-spacing: 0;
+        }
+
+        a {
+          color: #3dc9a7;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 `;
 
 export const HomeContainer = styled.div`
@@ -75,12 +164,12 @@ export const IntroContainer = styled.div`
     width: 60%;
     font-size: 1rem;
     position: relative;
-    right: 20%;
+    right: 25%;
   }
   @media (max-width: 449px) {
     width: 70%;
     position: relative;
-    right: 10%;
+    right: 25%;
   }
 `;
 

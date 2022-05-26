@@ -8,7 +8,7 @@ export const Cross = styled.div`
   @media (max-width: 799px) {
     position: relative;
     left: 87%;
-    top: 1%;
+    top: 4%;
     font-size: 1.5rem;
   }
 `;
@@ -28,8 +28,9 @@ export const MenuDiv = styled.div`
 
   @media (max-width: 799px) {
     z-index: 150;
-    margin-top: 2%;
+    margin-top: 8%;
     margin-left: 10%;
+    display: ${({ isOpen }) => (isOpen ? "none" : "visible")};
   }
 `;
 export const NavContainer = styled.div`
@@ -51,7 +52,7 @@ export const NavContainer = styled.div`
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     height: 100vh;
     background: none;
-    z-index: ${({isOpen}) => (isOpen ? "2" : "-1000")};
+    z-index: ${({ isOpen }) => (isOpen ? "2" : "-1000")};
   }
 `;
 
