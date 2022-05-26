@@ -36,14 +36,14 @@ export const H2 = styled.h2`
 `;
 
 export const FormContainer = styled.div`
-  height: 75%;
+  /* height: 75%; */
   width: 40%;
   box-shadow: 0 0 6px 5px gray;
   border: 2px solid white;
   border-radius: 30px;
 
   @media (min-width: 1300px) {
-    height: 85%;
+    height: 80%;
   }
 
   @media (min-width: 1070px) and (max-width: 1299px) {

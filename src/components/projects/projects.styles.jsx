@@ -23,11 +23,11 @@ export const H2 = styled.h2`
   @media (max-width: 768px) {
     margin-top: 2vh;
     margin-bottom: 7vh;
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
   @media (max-width: 480px) {
     margin-top: 10vh;
     margin-bottom: 7vh;
-    font-size: 3.5rem;
+    font-size: 2rem;
   }
 `;

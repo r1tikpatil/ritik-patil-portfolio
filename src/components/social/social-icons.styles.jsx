@@ -17,7 +17,7 @@ export const Main = styled.div`
     left: 10%;
   }
   @media (min-width: 1100px) and (max-width: 1299px) {
-    top: 0;
+    top: -10px;
     left: 5%;
   }
   @media (max-width: 1099px) and (min-width: 1000px) {
@@ -44,7 +44,7 @@ export const CircleOuter = styled.div`
     margin: 50px 20px;
   }
   @media (max-width: 809px) and (min-width: 710px) {
-    margin: 50px 15px;
+    margin: 50px 10px;
   }
   @media (max-width: 709px) and (min-width: 625px) {
     margin: 50px 10px;
