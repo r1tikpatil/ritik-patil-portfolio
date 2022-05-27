@@ -28,9 +28,8 @@ export const Aboutopen = styled.div`
     border-bottom-left-radius: 50%;
   }
 
-  @media (max-width: 599px) and (min-width: 400px) {
+  @media (max-width: 599px) and (min-width: 510px) {
     width: 40%;
-    height: 90vh;
     position: fixed;
     top: 34px;
     left: ${({ isOpen }) => (isOpen ? "60%" : "3000px")};
@@ -40,6 +39,28 @@ export const Aboutopen = styled.div`
     border-bottom-left-radius: 50%;
     z-index: 100;
     height: 70vh;
+  }
+  @media (max-width: 510px) and (min-width: 400px) {
+    width: 80%;
+    position: absolute;
+    bottom: ${({ isOpen }) => (isOpen ? "45%" : "3000px")};
+    border: 2px solid grey;
+    box-shadow: 0 0 6px 4px white;
+    background-color: black;
+    z-index: 100;
+    height: 40vh;
+    left: 8%;
+  }
+  @media (max-width: 399px) and (min-width: 300px) {
+    width: 90%;
+    position: absolute;
+    bottom: ${({ isOpen }) => (isOpen ? "45%" : "3000px")};
+    border: 2px solid grey;
+    box-shadow: 0 0 6px 4px white;
+    background-color: black;
+    z-index: 100;
+    height: 45vh;
+    left: 4%;
   }
 
   .about-me {
@@ -52,13 +73,14 @@ export const Aboutopen = styled.div`
       top: 20%;
       width: 70%;
     }
-    @media (max-width: 599px) and (min-width: 400px) {
+    @media (max-width: 599px) and (min-width: 510px) {
       left: 11%;
       top: 16%;
       width: 80%;
     }
-    @media (max-width: 400px) {
-      top: 20%;
+    @media (max-width: 509px) {
+      top: 8%;
+      width: 80%;
     }
 
     h3 {
@@ -166,10 +188,15 @@ export const IntroContainer = styled.div`
     position: relative;
     right: 25%;
   }
-  @media (max-width: 449px) {
+  @media (max-width: 449px) and (min-width: 400px) {
     width: 70%;
     position: relative;
     right: 25%;
+  }
+  @media (max-width: 400px) and (min-width: 300px) {
+    width: 90%;
+    position: relative;
+    right: 20%;
   }
 `;
 
@@ -205,6 +232,11 @@ export const NameDiv = styled.div`
     font-size: 1.5rem;
   }
   @media (max-width: 577px) and (min-width: 400px) {
+    font-size: 1.3rem;
+    width: 100%;
+    height: 30%;
+  }
+  @media (max-width: 399px) and (min-width: 300px) {
     font-size: 1.3rem;
     width: 100%;
     height: 30%;

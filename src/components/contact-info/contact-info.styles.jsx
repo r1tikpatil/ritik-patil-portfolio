@@ -7,6 +7,8 @@ export const ContactContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
+
+
 `;
 
 export const H2 = styled.h2`
@@ -50,11 +52,20 @@ export const FormContainer = styled.div`
     height: 85%;
   }
 
-  @media (min-width: 600px) and (max-width: 1068px) {
+  @media (min-width: 751px) and (max-width: 1068px) {
     height: 70%;
+  }
+  @media (min-width: 700px) and (max-width: 750px) {
+    height: 70%;
+    width:70%;
+  }
+  @media (min-width: 600px) and (max-width: 699px) {
+    height: 70%;
+    width:70%;
   }
 
   @media (max-width: 599px) {
+    width:70%;
     height: 70%;
   }
 

@@ -14,7 +14,7 @@ export const DivWrapper = styled.div`
     margin-bottom: 29rem;
     margin-top: -100px;
   }
-  @media (max-width: 599px) and (min-width:400px) {
+  @media (max-width: 599px) and (min-width: 400px) {
     margin-left: 5vh;
     margin-right: 3vh;
     margin-top: -8rem;
@@ -22,9 +22,10 @@ export const DivWrapper = styled.div`
   }
 
   @media (max-width: 399px) {
-      margin-bottom: 72rem;
-      margin-right: 0;
-      margin-left: 0;
+    margin-bottom: 10rem;
+    margin-right: 0;
+    margin-left: 0;
+    height:130vh;
   }
 `;
 export const Text = styled.h2`
@@ -81,7 +82,7 @@ export const Icons = styled.div`
     }
   }
 
-  @media (min-width: 400px) and (max-width: 599px) {
+  @media (min-width: 300px) and (max-width: 599px) {
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
     row-gap: 1rem;

@@ -43,23 +43,35 @@ export const CircleOuter = styled.div`
   @media (max-width: 929px) and (min-width: 810px) {
     margin: 50px 20px;
   }
-  @media (max-width: 809px) and (min-width: 710px) {
+  @media (max-width: 809px) and (min-width: 701px) {
     margin: 50px 10px;
   }
-  @media (max-width: 709px) and (min-width: 625px) {
-    margin: 50px 10px;
+  @media (max-width: 750px) and (min-width: 701px) {
+    margin: 50px 35px;
+  }
+  @media (max-width: 700px) and (min-width: 625px) {
+    left: 10px;
+    margin: 50px 30px;
   }
   @media (max-width: 624px) and (min-width: 530px) {
-    left: 2px;
-    margin: 50px 5px;
+    left: 5px;
+    margin: 50px 25px;
   }
-  @media (max-width: 529px) and (min-width: 510px) {
-    left: -5px;
-    margin: 50px 5px;
+  @media (max-width: 529px) and (min-width: 491px) {
+    left: 5px;
+    margin: 50px 20px;
   }
-  @media (max-width: 509px) {
-    left: 0px;
-    margin: 50px 3px;
+  @media (max-width: 490px) and (min-width: 400px) {
+    left: 10px;
+    margin: 50px 15px;
+  }
+  @media (max-width: 399px) and (min-width: 366px) {
+    left: 5px;
+    margin: 50px 10px;
+  }
+  @media (max-width: 365px) and (min-width: 300px) {
+    left: 1px;
+    margin: 50px 10px;
   }
 
   .circle1:hover {
@@ -91,14 +103,9 @@ export const Circle = styled.div`
   backdrop-filter: blur(10px);
   top: 40px;
 
-  @media (max-width: 550px) and (min-width: 365px) {
-    height: 30px;
-    width: 30px;
-  }
-
-  @media (max-width:364px) {
-    height:25px;
-    width:25px;
+  @media (max-width: 364px) {
+    height: 35px;
+    width: 35px;
   }
 
   a {
@@ -109,11 +116,8 @@ export const Circle = styled.div`
     font-size: 15px;
     z-index: 1;
 
-    @media (max-width: 550px) and (min-width: 365px) {
-      font-size: 10px;
-    }
     @media (max-width: 365px) {
-      font-size: 7px;
+      font-size: 15px;
     }
   }
 
@@ -122,15 +126,10 @@ export const Circle = styled.div`
     top: 24%;
     left: 30%;
     font-size: 25px;
-    @media (max-width: 550px) and (min-width: 365px) {
+    @media (max-width: 365px) {
       font-size: 20px;
       left: 25%;
       top: 20%;
-    }
-    @media (max-width: 365px) {
-      font-size: 16px;
-      left:20%;
-      top:15%;
     }
   }
 
@@ -143,5 +142,4 @@ export const Circle = styled.div`
     color: white;
     transition: all 0.5s;
   }
-  
 `;
