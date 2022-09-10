@@ -37,7 +37,7 @@ const contentCard = [
     body: "My personal portfolio website built with React with smooth scroll with modern look to showcase my projects and accomplishments.",
     image: portfolio,
     tech: `REACT  STYLED-COMPONENTS  AOS ANIMATIONS`,
-    linkgithub: "#",
+    linkgithub: "https://github.com/r1tikpatil/ritik-patil-portfolio",
     linkdemo: "",
   },
 ];
