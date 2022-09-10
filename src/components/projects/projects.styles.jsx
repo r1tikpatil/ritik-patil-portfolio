@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ProjectContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 0.4fr 0.4fr;
   grid-gap: 25px;
   justify-content: center;
   margin: 3rem;

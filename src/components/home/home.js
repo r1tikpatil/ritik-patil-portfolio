@@ -13,6 +13,7 @@ import Typed from "react-typed";
 import { useState } from "react";
 
 import cv from "../../assets/My_Resume.pdf";
+import me from '../../assets/ritik.jpg'
 
 const buttonVariant = {
   hidden: {
@@ -76,7 +77,7 @@ const Home = () => {
         <ImageContainer style={{ cursor: "pointer" }}>
           <Image>
             <img
-              src="https://image.shutterstock.com/image-vector/vector-male-face-avatar-logo-600w-424801768.jpg"
+              src={me}
               alt="Ritik Patil"
             />
           </Image>

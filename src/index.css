@@ -5,7 +5,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
+  background-image: url('../public/star.jpg');
+  background-size: cover;
   
 }
 

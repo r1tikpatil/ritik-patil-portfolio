@@ -152,10 +152,11 @@ export const Image = styled.div`
   height: 90%;
   border-radius: 50%;
   overflow: hidden;
-
+  /* z-index: 100; */
   img {
     width: 100%;
     height: 100%;
+    /* z-index: 1000; */
   }
   &:hover {
     box-shadow: 0 0 16px 1px lightblue;

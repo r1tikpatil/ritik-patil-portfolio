@@ -5,32 +5,8 @@ import { H2, FormContainer, ContactContainer } from "./contact-info.styles";
 
 import SocialIcons from "../social/social-icons.component";
 
-const Conatct = () => {
-  const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_itlgmci",
-        "template_qbyiysb",
-        form.current,
-        "ZwOaVPL95r85PRFYt"
-      )
-
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-
-    e.target.reset();
-  };
-
+const Contact = () => {
   return (
     <ContactContainer id="contact">
       <H2>
@@ -40,7 +16,7 @@ const Conatct = () => {
         Contact
       </H2>
       <FormContainer>
-        <form ref={form} onSubmit={sendEmail}>
+        <form >
           <input
             type="text"
             placeholder="Name"
@@ -73,4 +49,4 @@ const Conatct = () => {
   );
 };
 
-export default Conatct;
+export default Contact;

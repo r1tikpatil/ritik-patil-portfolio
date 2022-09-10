@@ -1,6 +1,5 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Fragment } from "react";
 import contentCard from "../project-card-content/content.component";
 import Card from "../project-card/project-card.component";
 
